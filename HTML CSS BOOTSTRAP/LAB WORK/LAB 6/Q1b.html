@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 800px;
+            width: 100%;
+            background-color: aqua;
+        }
+        .header{
+            height: 760px;
+            width: 90%;
+            margin-left: 5%;
+            margin-top:0px ;background-color: purple;
+        }
+        .contain{
+            height:730px ;
+            margin-top: 20px;
+            width: 100%;
+            background-color: rgb(255, 196, 0);
+        }
+        .box{
+            height: 40px;
+            width: 200px;
+            background-color: black;
+            margin-top: 50px;
+            margin-left: 30px;
+            color: white;
+        }
+        .sidebar{
+            height: 220px;
+            width: 100px;
+            margin-left:300px;
+            margin-top: -220px;
+            margin-right: 50px;
+            color: white;
+            float: right;
+            
+            background-color: black;
+        }
+        .darshan{
+            height: 20px;
+            width: 100%;
+            background-color: blue;
+            color: white;
+            margin-top: -20px;   
+        }
+        @media (max-width:50%) {
+            .main{
+                width: 100%;
+                height: 100%;
+
+            }
+            .header{
+                width: 100%;
+            }
+            .contain{
+                width: 100%;
+            }
+            .box{
+                width: 100%;
+            }
+            .sidebar{
+                width: 100%;
+            }
+            .darshan{
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        main
+        <div class="header">
+            header
+            <div class="contain">
+                contain
+                <div class="box">First</div>
+                <div class="box">Second</div>
+                <div  class="box">third</div>
+                <div class="sidebar">sidebar</div>
+            </div>
+            <div class="darshan">
+                @Darshan Univeresity
+            </div>
+        </div>
+    </div>
+</body>
+</html>
