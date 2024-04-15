@@ -215,7 +215,8 @@
     height: 420px;
     background-color: white;
     padding: 20px 0px 15px;
-    box-sizing: border-box  ;
+    box-sizing: border-box;
+    margin-top: 12px;    
 }
 
 .a-tag{
@@ -237,7 +238,7 @@
 .footer{
     margin-top: 15px;
 }
-.footer-part1{
+.footer-part1 a{
     background-color: #37475a;
     height: 50px;
     border: 1px solid #ddd;
@@ -264,6 +265,9 @@ a{
 }
 .footer-part2 li{
     margin-top: 12px;
+}
+.footer-part2 li p{
+    color: white;
 }
 .footer-part2 ul{
     list-style-type: none;

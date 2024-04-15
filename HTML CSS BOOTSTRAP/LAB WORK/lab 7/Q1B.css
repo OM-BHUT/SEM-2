@@ -1,0 +1,20 @@
+.main1{
+    width: auto;
+    float: left;
+}
+.navbar{
+    float: right;
+}
+.main{
+    background-color: white;
+    padding: 10px 20px;
+    float: right;
+    margin: 30px;
+    color: blue;
+}
+.sidebar{
+    float: left;
+    margin: 30px;
+    background-color: red;
+    color: black;
+}

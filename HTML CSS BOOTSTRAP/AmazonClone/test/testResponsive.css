@@ -1,0 +1,9 @@
+.testing{
+    background-color: blue;
+}
+@media screen and (min-width:720px){
+    .testing{
+        background-color: red;
+        font-size: 2000px;
+    }
+}

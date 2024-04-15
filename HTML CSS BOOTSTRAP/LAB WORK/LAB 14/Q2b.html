@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+main {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+section p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  main {
+    height: auto;
+  }
+
+  section {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>My Full-Page Layout</h1>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>Welcome to my full-page layout! This layout is designed to take up the entire height and width of the browser window.</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive design</li>
+        <li>Fixed navigation bar</li>
+        <li>Parallax scrolling effect</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Twitter: <a href="https://twitter.com/yourusername">@yourusername</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Full-Page Layout</p>
+  </footer>
+</body>
+</html>
