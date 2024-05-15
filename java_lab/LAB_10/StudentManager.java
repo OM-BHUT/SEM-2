@@ -11,7 +11,7 @@ class Student implements Serializable {
         this.gpa = gpa;
     }
 
-    @Override
+    
     public String toString() {
         return "Name: " + name + ", ID: " + id + ", GPA: " + gpa;
     }
@@ -40,9 +40,9 @@ public class StudentManager {
 
     public static void main(String[] args) {
         Student[] students = {
-                new Student("John Doe", 1001, 3.8),
-                new Student("Jane Smith", 1002, 3.9),
-                new Student("Alice Johnson", 1003, 3.7)
+                new Student("Om Bhut", 1001, 3.8),
+                new Student("Jay Vegad", 1002, 3.9),
+                new Student("Dhruv Chotai", 1003, 3.7)
         };
 
         saveStudents(students);
