@@ -15,98 +15,26 @@ overflow : x y;
 
 
 
+I removed the justify-content-center align-items-stretch classes from the row to prevent unnecessary centering and stretching.
+I added the d-flex flex-column h-100 classes to each card column to ensure they stretch vertically to fill the available space.
+I added the flex-grow-1 class to each card to allow it to grow and fill the available space within its column
 
-<div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container d-flex justify-content-center align-items-center justify-content-evenly">
-              <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-                
-                <div class="card text-white shadow bg-dark ms-3" style="width: 18rem;">
-                  <img src="employee.jpg" alt="" class="d-block w-100">
-                  <div class="card-body">
-                    <h5 class="card-title text-capitalize ">Card title</h5>
-                    <p class="card-text text-white-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush text-capitalize ">
-                    <li class="list-group-item text-white bg-dark">Email</li>
-                    <li class="list-group-item text-white bg-dark">Phone Number</li>
-                    <li class="list-group-item text-white bg-dark">Years of experience</li>
-                  </ul>
-                  
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-                
-                <div class="card text-white shadow bg-dark ms-5" style="width: 18rem;">
-                  <img src="employee.jpg" alt="" class="d-block w-100">
-                  <div class="card-body">
-                    <h5 class="card-title text-capitalize ">Card title</h5>
-                    <p class="card-text text-white-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush text-capitalize ">
-                    <li class="list-group-item text-white bg-dark">Email</li>
-                    <li class="list-group-item text-white bg-dark">Phone Number</li>
-                    <li class="list-group-item text-white bg-dark">Years of experience</li>
-                  </ul>
-                  
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-                
-                <div class="card text-white shadow bg-dark ms-5" style="width: 18rem;">
-                  <img src="employee.jpg" alt="" class="d-block w-100">
-                  <div class="card-body">
-                    <h5 class="card-title text-capitalize ">Card title</h5>
-                    <p class="card-text text-white-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush text-capitalize ">
-                    <li class="list-group-item text-white bg-dark">Email</li>
-                    <li class="list-group-item text-white bg-dark">Phone Number</li>
-                    <li class="list-group-item text-white bg-dark">Years of experience</li>
-                  </ul>
-                  
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="col-12 col-lg-4">
-                
-                <div class="card text-white shadow bg-dark ms-5" style="width: 18rem;">
-                  <img src="employee.jpg" alt="">
-                  <div class="card-body">
-                    <h5 class="card-title text-capitalize ">Card title</h5>
-                    <p class="card-text text-white-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush text-capitalize ">
-                    <li class="list-group-item text-white bg-dark">Email</li>
-                    <li class="list-group-item text-white bg-dark">Phone Number</li>
-                    <li class="list-group-item text-white bg-dark">Years of experience</li>
-                  </ul>
-                  
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+websites :- shape divider
+
+
