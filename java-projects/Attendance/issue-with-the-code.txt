@@ -1,0 +1,30 @@
+checkAbsent = false;
+                            for (int j = 0; j < noOfClass; j++) {
+                                for (int k = 0; k < noOfStudents[j]; k++) {
+                                    if (changeRollNo == noOfStudents[j]) {
+                                        rollNoFound = true;
+                                        totalAbsent++;
+                                        absentNos[totalAbsent] = changeRollNo;
+                                    }
+                                }
+                            }
+                        
+
+noOfStudents[i] not storing actual roll number
+
+while (true) {
+                        try {
+                            
+                            if( ){
+                                throw new IllegalArgumentException("");
+                            }
+                            break;
+                        } catch (InputMismatchException e) {
+                            System.out.println("Enter only integer value");
+                            sc.nextLine();
+                        }catch(IllegalArgumentException e){
+                            e.getMessage();
+                        }catch(Exception e){
+                            e.printStackTrace();
+                        }
+}

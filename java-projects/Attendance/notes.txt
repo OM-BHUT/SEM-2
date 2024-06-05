@@ -1,0 +1,71 @@
+Source method: where the exception can originate -> contais logic of code
+Destination method : which called the Source method
+
+nextInt() reads digits until it hits a non-digit character.
+nextLine() reads everything until it hits a newline character (\n).
+
+
+
+
+Other Solutions:
+a. Use nextLine() for Everything:
+String input = sc.nextLine();
+int age = Integer.parseInt(input);
+
+This works because nextLine() always consumes the entire line.
+Downside: You have to manually parse each input.
+
+
+Certainly! This part of the code is responsible for determining where to create or update a file named "absent-no.txt". It ensures that the file exists in the correct directory before writing to it. Let's break it down line by line:
+
+1. `String currentDirectory = System.getProperty("user.dir");`
+   - This line retrieves the current working directory of the Java application.
+   - `System.getProperty("user.dir")` is a standard Java method that returns the path to the directory where the Java program is currently running.
+   - For example, if you run your Java program from `/home/user/projects/attendance`, this line will set `currentDirectory` to that path.
+
+2. `System.out.println("Current directory: " + currentDirectory);`
+   - This line simply prints out the current directory path to the console.
+   - It's helpful for debugging, as it shows you exactly where the program is looking for or creating files.
+
+3. `String filePath = currentDirectory + File.separator + "absent-no.txt";`
+   - This line constructs the full path to the file you want to create or update.
+   - `currentDirectory` is the path we got from step 1.
+   - `File.separator` is a Java constant that represents the file path separator. It's `\` on Windows and `/` on Unix-based systems (like Linux or macOS). Using this makes your code work on any operating system.
+   - `"absent-no.txt"` is the name of your file.
+   - So, if your program is running in `/home/user/projects/attendance`, `filePath` will be `/home/user/projects/attendance/absent-no.txt`.
+
+4. `File file = new File(filePath);`
+   - This line creates a new `File` object that represents the file at the path you just constructed.
+   - The file doesn't have to exist yet; this object just represents a potential file at that location.
+
+5. `if (file.exists()) { ... } else { ... }`
+   - This is an if-else statement that checks whether the file already exists.
+   - `file.exists()` returns `true` if a file (or directory) with that name already exists at the specified path, and `false` otherwise.
+
+6. `System.out.println("File already exists, overwriting...");`
+   - If the file does exist, this message is printed to let you know that the program will overwrite the existing file.
+   - This is just for information; the actual overwriting happens later when you use `new FileWriter(filePath)`.
+
+7. Inside the `else` block (if the file doesn't exist):
+   a. `System.out.println("Creating new file...");`
+      - This message tells you that the program is about to create a new file.
+   
+   b. `boolean fileCreated = file.createNewFile();`
+      - `file.createNewFile()` is a Java method that tries to create a new, empty file at the location specified by the `File` object.
+      - If it succeeds, it returns `true`; if it fails (e.g., due to permission issues or disk space), it returns `false`.
+      - The result is stored in the `fileCreated` variable.
+   
+   c. `if (!fileCreated) { ... }`
+      - This checks if file creation failed (`!fileCreated` is `true` when `fileCreated` is `false`).
+      - If creation failed, it prints an error message and calls `return`, which exits the `main` method immediately, stopping the program.
+      - This is a safety measure: if you can't create the file, there's no point in trying to write to it later.
+
+In summary:
+1. Find out where the program is running.
+2. Build the full path for the "absent-no.txt" file in that directory.
+3. Check if the file already exists.
+4. If it exists, prepare to overwrite it.
+5. If it doesn't exist, try to create it.
+6. If creation fails, stop the program with an error message.
+
+This part of your code is about file management: making sure the file is in the right place and is ready to be written to. It's a common pattern in Java applications that need to save data to files. The code is designed to be cross-platform (works on Windows, Linux, macOS) and handles errors gracefully, which are both good practices.

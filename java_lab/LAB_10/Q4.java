@@ -3,8 +3,6 @@
 // FileInputStream and FileOutputStream
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 
@@ -51,3 +49,4 @@ class Student{
         return "name= "+name+" age="+age;
     }
 }
+
