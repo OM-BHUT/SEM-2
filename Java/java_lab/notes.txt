@@ -1,0 +1,9 @@
+static -> share common things,improve memory management
+
+
+
+static variable can be used inside non static method
+but non static variable cannot be used inside a static method
+
+
+private and public video -> eclipse tutorial
