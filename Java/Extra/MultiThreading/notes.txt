@@ -1,0 +1,9 @@
+jvm
+
+jre -> jvm + class libraries
+
+jdk -> jre + compiler
+
+jvm -> invoke main method
+
+class should be accesible by jvm thats why main class is public
